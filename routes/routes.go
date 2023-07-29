@@ -18,9 +18,12 @@ func HandleRequest() {
 
 	//Produtos
 	router.GET("/", controllers.Home)
-	router.GET("/api/personalidades", controllers.BuscarTodosProdutos)
-	/*router.GET("/api/personalidades/:id", controllers.BuscarPersonalidadePorId)
-	router.POST("/api/personalidades", controllers.CriarPersonalidade)
+	router.GET("/api/produtos", controllers.BuscarTodosProdutos)
+
+	//Combos
+	router.GET("/api/combos", controllers.BuscarTodosCombos)
+	router.POST("/api/combos", controllers.CriarCombo)
+	/*router.POST("/api/personalidades", controllers.CriarPersonalidade)
 	router.DELETE("/api/personalidades/:id", controllers.DeletarPersonalidade)
 	router.PUT("/api/personalidades/:id", controllers.EditarPersonalidade)*/
 

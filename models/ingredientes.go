@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Ingrediente struct {
-	Id        int    `json:"id"`
-	Nome      string `json:"name"`
-	ProdutoID string `json:"produto_id"`
+	gorm.Model
+	Nome      string `json:"nome"`
+	ProdutoID uint
 }
