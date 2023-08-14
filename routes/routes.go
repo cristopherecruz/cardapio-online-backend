@@ -16,6 +16,10 @@ func HandleRequest() {
 
 	router.Use(middleware.HeaderMiddleware)
 
+	//Autenticação
+	router.POST("/api/login", controllers.Login)
+	router.POST("/api/registro", controllers.Registro)
+
 	//Produtos
 	router.GET("/", controllers.Home)
 	router.GET("/api/produtos", controllers.BuscarTodosProdutos)

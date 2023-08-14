@@ -23,6 +23,7 @@ func ConectarBancoDados() {
 	Db.AutoMigrate(&models.Produto{})
 	Db.AutoMigrate(&models.Ingrediente{})
 	Db.AutoMigrate(&models.Combo{})
+	Db.AutoMigrate(&models.Usuario{})
 
 	//PopularDados(Db)
 
